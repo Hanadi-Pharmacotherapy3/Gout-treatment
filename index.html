@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gout treatment</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#FFFFFF}
+  body{font-family:Calibri,Carlito,"Segoe UI",Arial,sans-serif;color:#000000;font-size:11.5pt;line-height:1.38;padding:28px 20px 36px}
+  .page{max-width:1500px;margin:0 auto}
+
+  /* Typography scheme */
+  .doc-title{font-size:48pt;font-weight:700;color:#0070C0;text-align:center;line-height:1.1}
+  .header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+  .author{font-size:16pt;font-weight:700;color:#000000;text-align:left}
+  @media (max-width:700px){.header{grid-template-columns:1fr}.header>div:last-child{display:none}.author{order:2;text-align:center}}
+  h1{font-size:16pt;font-weight:700;color:#0070C0;line-height:1.2}
+  h2{font-size:14pt;font-weight:700;color:#009999;line-height:1.25}
+  h3{font-size:13pt;font-weight:700;color:#590079;line-height:1.25}
+  h4{font-size:12pt;font-weight:700;color:#3A7D22}
+  h2 small,h1 small{font-size:10.5pt;font-weight:400;color:#000000}
+
+  .tip{margin:16px auto 22px;width:fit-content;max-width:100%;border:2px dashed #0070C0;border-radius:10px;padding:8px 18px;font-size:12.5pt;text-align:center}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+  @media (max-width:900px){.cols{grid-template-columns:1fr}}
+
+  .arm{border:3px solid var(--c);border-radius:16px;overflow:hidden;background:#FFFFFF}
+  .armhd{background:var(--l);border-bottom:3px solid var(--c);padding:10px 16px}
+  .armhd p{margin-top:2px;font-size:11pt}
+  .body{padding:12px 14px 14px}
+
+  .sec{border:1.5px solid var(--c);border-radius:10px;margin-bottom:11px;overflow:hidden}
+  .sec:last-child{margin-bottom:0}
+  .sh{background:var(--l);padding:6px 12px}
+  .sb{padding:8px 12px 10px}
+  .sb ul{padding-left:20px}
+  .sb li{margin:2px 0}
+
+  .drug{border-left:4px solid var(--k);padding:3px 0 3px 10px;margin:7px 0}
+  .tag{display:inline-block;font-size:9pt;font-weight:700;color:#FFFFFF;background:var(--k);border-radius:5px;padding:1px 7px;margin-right:6px;vertical-align:1px;white-space:nowrap}
+  .g{--k:#3A7D22}.p{--k:#590079}.r{--k:#C00000}.t{--k:#009999}
+  .warn{color:#C00000;font-weight:700}
+  .note{background:#FFF4E5;border:1.5px solid #C55A11;border-radius:8px;padding:6px 10px;margin-top:8px;font-size:11pt}
+  .note.red{background:#FDECEC;border-color:#C00000}
+
+  .mini{display:grid;grid-template-columns:minmax(150px,38%) 1fr;gap:3px 12px}
+  .mini b{font-weight:700}
+
+  .ladder{display:flex;align-items:stretch;gap:6px;margin-top:6px}
+  .step{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;border:1.5px solid #009999;border-radius:8px;padding:6px;font-size:10.5pt;background:#E6F7F7}
+  .arrow{align-self:center;font-weight:700;color:#009999;font-size:14pt}
+  @media (max-width:560px){.ladder{flex-direction:column}.arrow{transform:rotate(90deg)}}
+
+  .wide{margin-top:22px;border:3px solid #590079;border-radius:16px;overflow:hidden}
+  .wide .armhd{background:#F2E6F7;border-bottom-color:#590079}
+  table{width:100%;border-collapse:collapse;font-size:11pt}
+  th,td{border:1px solid #B9B9B9;padding:6px 10px;text-align:left;vertical-align:top}
+  th{background:#F2E6F7}
+  .tablewrap{overflow-x:auto}
+
+  .bottom{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;margin-top:22px}
+  @media (max-width:900px){.bottom{grid-template-columns:1fr}}
+  .box{border:2px solid #0070C0;border-radius:12px;padding:10px 14px}
+  .box h2{margin-bottom:4px}
+  .key{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:4px}
+
+  @page{size:A4 portrait;margin:10mm}
+  @media print{
+    html,body{background:#FFFFFF}
+    body{padding:0;line-height:1.28}
+    .page{width:1150px;max-width:none;zoom:0.62}
+    .doc-title{line-height:1}
+    .tip{margin:6px auto 10px;padding:4px 14px}
+    .cols{grid-template-columns:1fr 1fr;gap:12px}
+    .armhd{padding:6px 12px}
+    .body{padding:8px 9px 9px}
+    .sec{margin-bottom:7px}
+    .sh{padding:4px 10px}
+    .sb{padding:5px 10px 6px}
+    .drug{margin:4px 0;padding:2px 0 2px 8px}
+    .note{padding:4px 9px;margin-top:5px}
+    .mini{gap:1px 10px}
+    .wide{margin-top:10px}
+    th,td{padding:3px 9px}
+    .bottom{grid-template-columns:1.35fr 1fr;gap:12px;margin-top:10px}
+    .box{padding:6px 12px}
+    .ladder{flex-direction:row}.arrow{transform:none}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header"><div class="author">Dr Hanadi Al Shaker</div><div class="doc-title">Gout treatment</div><div aria-hidden="true"></div></div>
+<div class="tip">For every line you read, ask: <b>is this to stop the flare <u>now</u>, or to lower uric acid <u>for life</u>?</b><br>Two separate arms, each with its own non-pharmacological and pharmacological parts.</div>
+
+<div class="cols">
+
+<!-- Arm 1 -->
+<section class="arm" style="--c:#C55A11;--l:#FBE9DD">
+  <div class="armhd">
+    <h1>Arm 1: treat the acute flare</h1>
+    <p>Section 6 · goal: fast relief of pain and inflammation · start within 24 hours · short course (days)</p>
+  </div>
+  <div class="body">
+
+    <div class="sec">
+      <div class="sh"><h2>6.1 Non-pharmacological <small>(helper only, not enough alone)</small></h2></div>
+      <div class="sb"><ul>
+        <li><b>Ice packs:</b> the most effective non-drug measure (conditional recommendation)</li>
+        <li><b>Rest the joint:</b> immobilisation speeds recovery</li>
+      </ul></div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>6.2 Pharmacological <small>(choose by patient factors; “medication-in-pocket” for early use)</small></h2></div>
+      <div class="sb">
+        <div class="drug g"><span class="tag">First-line</span><b>6.2.1 Non-steroidal anti-inflammatory drugs:</b> naproxen, indomethacin, sulindac (approved for gout); high dose, shortest course, until 24 hours after symptoms settle. <span class="warn">Avoid:</span> peptic ulcer risk, anticoagulants, renal impairment, uncontrolled hypertension, heart failure. Add a proton pump inhibitor to protect the stomach.</div>
+        <div class="drug g"><span class="tag">First-line</span><b>6.2.2 Colchicine:</b> low dose only, 1.2 mg then 0.6 mg one hour later; must start within 36 hours. Not a painkiller; blocks neutrophils. Diarrhoea and nausea warn of toxicity. <span class="warn">Caution:</span> renal impairment, interacting drugs (clarithromycin, verapamil, ritonavir, ciclosporin).</div>
+        <div class="drug g"><span class="tag">First-line</span><b>6.2.3 Glucocorticoids:</b> oral prednisone or prednisolone 0.5 mg/kg/day for 5 to 10 days; intra-articular for one or two large joints (infection excluded first); intramuscular or intravenous if the patient cannot swallow. Best choice in renal impairment. <span class="warn">Watch:</span> blood glucose in diabetes.</div>
+        <div class="drug r"><span class="tag">Not first-line</span><b>6.2.4 Corticotropin:</b> works, but expensive and not approved for gout.</div>
+        <div class="drug p"><span class="tag">If first-line fails</span><b>6.2.5 Interleukin-1 inhibitors:</b> canakinumab (approved 2023) or anakinra (off-label); subcutaneous; main side effect is injection-site reaction.</div>
+        <div class="drug p"><span class="tag">Severe</span><b>6.2.6 Combination:</b> severe polyarticular attack, e.g. colchicine plus an anti-inflammatory drug or oral steroid.</div>
+        <div class="note">Opioids have little role: gout pain comes from inflammation, so treat the inflammation.</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>6.3 How to choose <small>(Table 4)</small></h2></div>
+      <div class="sb"><div class="mini">
+        <b>No comorbidity</b><span>Any first-line drug</span>
+        <b>Ulcer, heart failure</b><span>Avoid anti-inflammatory drugs; use a steroid or colchicine</span>
+        <b>Renal impairment</b><span>Glucocorticoid preferred</span>
+        <b>1 to 2 large joints</b><span>Intra-articular steroid after joint aspiration</span>
+        <b>Cannot swallow</b><span>Parenteral steroid (e.g. intramuscular triamcinolone)</span>
+        <b>First-line fails</b><span>Interleukin-1 inhibitor</span>
+      </div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>Side effects to remember <small>(Arm 1 drugs)</small></h2></div>
+      <div class="sb"><div class="mini">
+        <b>Anti-inflammatory drugs</b><span>Peptic ulcers, renal dysfunction, fluid retention</span>
+        <b>Colchicine</b><span>Nausea, vomiting, diarrhoea first; then myopathy and neutropenia</span>
+        <b>Glucocorticoids</b><span>Hyperglycaemia, fluid retention, weight gain, infection risk</span>
+        <b>Interleukin-1 inhibitors</b><span>Injection-site reaction</span>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Arm 2 -->
+<section class="arm" style="--c:#0070C0;--l:#E3F0FA">
+  <div class="armhd">
+    <h1>Arm 2: lower uric acid for life</h1>
+    <p>Section 7 · goal: serum uric acid below 6 mg/dL so crystals dissolve and flares stop · long term (years)</p>
+  </div>
+  <div class="body">
+
+    <div class="sec">
+      <div class="sh"><h2>7.1 Who needs it?</h2></div>
+      <div class="sb">
+        <div class="drug g"><span class="tag">Strong</span>2 or more flares a year · radiographic damage · any tophus</div>
+        <div class="drug t"><span class="tag">Conditional</span>More than one flare but fewer than 2 a year · first flare <b>plus</b> chronic kidney disease stage 3 or worse, uric acid above 9 mg/dL, or kidney stones</div>
+        <div class="drug r"><span class="tag">Not recommended</span>First flare alone · asymptomatic hyperuricaemia (24 patients treated for 3 years to prevent one flare)</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>7.2 Target and 7.3 timing</h2></div>
+      <div class="sb"><ul>
+        <li><b>Target:</b> below 6 mg/dL (357 µmol/L); do not keep it below 3 mg/dL long term</li>
+        <li><b>Treat-to-target:</b> measure uric acid and raise the dose until the target is reached (weeks to months); nurse or pharmacist can lead</li>
+        <li><b>Start:</b> can begin during a flare, once anti-inflammatory treatment has started</li>
+        <li><b>Never stop</b> it during a flare; continue indefinitely</li>
+      </ul></div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>7.4 Non-pharmacological <small>(not enough alone)</small></h2></div>
+      <div class="sb">
+        <ul>
+          <li><b>Lifestyle:</b> lose weight, exercise, limit alcohol, purines and high-fructose corn syrup; stay hydrated; no vitamin C supplements</li>
+          <li><b>Medication review:</b> switch hydrochlorothiazide; keep low-dose aspirin and statins</li>
+        </ul>
+        <div class="note red"><span class="warn">Trap:</span> the lecture lists losartan (preferred), fenofibrate (not recommended) and sodium-glucose cotransporter-2 inhibitors (may help) here. They are drugs, chosen for other diseases the patient has.</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><h2>7.5 Pharmacological</h2></div>
+      <div class="sb">
+        <div class="drug p"><span class="tag">7.5.1 Cover</span><b>Prophylaxis when starting:</b> low-dose colchicine, naproxen or prednisone for 3 to 6 months, because starting therapy can trigger flares</div>
+        <div class="drug g"><span class="tag">7.5.2 First-line</span><b>Allopurinol:</b> start 100 mg or less (50 mg in kidney disease), raise every 2 to 5 weeks, maximum 800 mg. Test HLA-B*58:01 in Southeast Asian and African American patients. <span class="warn">Rare but fatal hypersensitivity syndrome.</span> <b>Febuxostat:</b> alternative, 40 then 80 mg; <span class="warn">cardiovascular death warning.</span></div>
+        <div class="drug t"><span class="tag">7.5.3 Alternative</span><b>Probenecid:</b> increases uric acid excretion in urine. <span class="warn">Avoid:</span> kidney disease stage 3 or worse, kidney stones. Lesinurad withdrawn 2019.</div>
+        <div class="drug r"><span class="tag">7.5.4 Last resort</span><b>Pegloticase:</b> 8 mg intravenous every 2 weeks; refractory gout only. Screen for glucose-6-phosphate dehydrogenase deficiency.</div>
+        <h3 style="margin-top:10px">7.5.5 Escalation ladder</h3>
+        <div class="ladder">
+          <div class="step">First xanthine oxidase inhibitor at maximum dose</div><div class="arrow">→</div>
+          <div class="step">Switch to the second one</div><div class="arrow">→</div>
+          <div class="step">Add or switch to a uricosuric</div><div class="arrow">→</div>
+          <div class="step">Pegloticase, only if frequent flares or tophi</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<!-- Bridge -->
+<section class="wide">
+  <div class="armhd">
+    <h1>Why the same drugs appear twice: same drug, different job</h1>
+    <p>Arm 1 treats a flare at full dose for days. Arm 2 prevents flares at low dose for 3 to 6 months after urate-lowering therapy starts.</p>
+  </div>
+  <div class="body tablewrap"><table>
+    <tr><th style="width:22%">Drug</th><th>Arm 1: treat the flare (Section 6)</th><th>Arm 2: prophylaxis cover (Section 7.5.1)</th></tr>
+    <tr><td><b>Colchicine</b></td><td>1.2 mg, then 0.6 mg one hour later</td><td>0.6 mg once or twice daily (0.3 mg daily in severe renal impairment)</td></tr>
+    <tr><td><b>Naproxen</b></td><td>750 mg, then 250 mg every 8 hours</td><td>250 mg twice daily plus omeprazole 20 mg daily</td></tr>
+    <tr><td><b>Prednisone or prednisolone</b></td><td>0.5 mg/kg/day for 5 to 10 days</td><td>Below 10 mg/day</td></tr>
+  </table></div>
+</section>
+
+<div class="bottom">
+  <div class="box"><h2>Where each table belongs</h2>
+    <b>Table 2:</b> mixes both arms (rows from non-steroidal anti-inflammatory drugs to interleukin-1 inhibitors = Arm 1; xanthine oxidase inhibitors downwards = Arm 2) · <b>Tables 3 and 4:</b> Arm 1 only · <b>Table 5:</b> Arm 2 only
+  </div>
+  <div class="box"><h2>Colour key</h2>
+    <div class="key">
+      <span><span class="tag g">Green</span>first-line or strong</span>
+      <span><span class="tag t">Teal</span>alternative or conditional</span>
+      <span><span class="tag p">Purple</span>second-line or support</span>
+      <span><span class="tag r">Red</span>avoid, last resort, warning</span>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
